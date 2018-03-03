@@ -1,0 +1,47 @@
+
+<div class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <img class="img-fluid mx-auto d-block" src="/assets/img/darth-bl.png" width="120">
+        </div>
+  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <label class="title">Quiz - STARWARS</label>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="container">
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="align-text-center">Pontos</th>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr *ngFor="let item of ranking">
+                  <th scope="row">{{item.points}}</th>
+                  <td>{{item.name}}</td>
+                  <td>{{item.email}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 realod">
+        <a class="btn btn-success" [routerLink]="['/quiz']">Jogar Novamente</a>
+      </div> 
+    </div>
+  </div>

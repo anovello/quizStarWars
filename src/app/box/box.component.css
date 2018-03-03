@@ -1,0 +1,38 @@
+.box{
+    width: 198px;;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000000;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.img-box{
+    margin-bottom: 20px;
+}
+
+.nan{
+    display: -webkit-box;
+}
+
+@media(max-width: 1199px)
+{
+    .box{
+        width: 162px;;
+    }
+}
+
+@media(max-width: 991px)
+{
+    .box{
+        width: 114px;;
+    }
+}
+
+@media(max-width: 767px)
+{
+    .box{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+}

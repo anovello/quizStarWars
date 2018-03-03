@@ -1,0 +1,45 @@
+#home{
+    background-image: url('/assets/img/fundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 662px;
+}
+
+label{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 30px;  
+    font-family: 'STARWARS';
+    font-size: 45px;
+    color: #fff;
+}
+
+.btn{
+    margin-top: 430px;
+}
+
+@media(max-width: 768px)
+{
+    label{
+        padding-top: 0px;
+    }
+
+    .btn {
+        margin-top: 330px;
+    }
+}
+
+@media(max-width: 425px)
+{
+    label{
+        margin-top: 286px;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .btn {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="box">
+
+    <div class="row">
+        <div class="col-12">
+            <img class="img-fluid mx-auto d-block img-box" src="/assets/img/people/{{img}}" width="120">
+        </div>
+
+        <div class="col-2">
+
+            <ngx-smart-modal #myModal identifier="{{id}}">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="img-fluid mx-auto d-block img-box" src="/assets/img/people/{{img}}" width="120">
+                    </div>
+
+                    <div class="col-8">
+                        <span class="nan">Specie: {{people.planet}}</span>
+                        <span class="nan">Heigth: {{people.height}}</span>
+                        <span class="nan">Hair: {{people.hair_color}}</span>
+                        <span class="nan">Planet: {{people.planet}}</span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        Movies: {{people.movies}}
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="row">
+                    <div class="col-12">
+                        Vehicles: {{people.veh}}
+                    </div>
+                </div>
+          
+            </ngx-smart-modal>
+
+            <button class="btn btn-warning" (click)="modal()">?</button>
+
+        </div>
+
+        <div class="col-10">
+            <div class="form-group">
+                <input type="text" class="form-control" [formControl]="name" placeholder="Nome" (blur)="updateInput()">
+            </div>
+        </div>
+    </div>
+    
+</div>

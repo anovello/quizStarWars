@@ -1,0 +1,66 @@
+.menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: #ffe919;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-family: 'STARWARS';
+    font-size: 45px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.time{
+    font-family: 'STARWARS';
+    font-size: 29px;
+    padding-top: 37px;
+    width: 60px;
+}
+
+.loading{
+    margin-right: 10px;
+    margin-top: -10px;
+}
+
+.tempo {
+    text-align: right;
+}
+
+.pagination{
+    margin-top: 20px;
+}
+
+.btn-success{
+    color: #fff!important;
+    cursor: pointer;
+}
+
+.realod{
+    text-align: center;
+}
+
+.modalPontos{
+    text-align: center;
+}
+
+.modalPontos h1{
+    color: green;
+}
+
+@media(max-width: 992px)
+{
+    .title{
+        text-align: center;
+        padding-top: 0px;
+    }
+}
+
+@media(max-width: 992px)
+{
+    .tempo{
+        text-align: center;
+    }
+}
