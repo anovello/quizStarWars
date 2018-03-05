@@ -78,7 +78,7 @@ export class QuizService{
 		this.peoples.forEach(element => {
 			element.forEach(el => {
 
-				if (el.nameValid !== undefined && (el.nameValid.toLowerCase() === el.name.toLowerCase() ))
+				if (el.nameValid !== undefined && (el.nameValid.toLowerCase().trim() === el.name.toLowerCase().trim() ))
 				{
 					if (el.visualized === true)
 					{

@@ -81,7 +81,7 @@
       <div class="form-group">
 
         <input type="email" class="form-control" 
-          [class.is-invalid]="rForm.get('email').hasError('required') && rForm.get('email').touched"
+          [class.is-invalid]="(rForm.get('email').hasError('required') || rForm.get('email').hasError('pattern')) && rForm.get('email').touched"
           id="email" aria-describedby="emailHelp" placeholder="E-mail" formControlName="email">
 
         <div class="invalid-feedback">

@@ -150,10 +150,13 @@ export class BoxComponent implements OnInit {
 
   updateInput()
   {  
-    if (this.name.value !== undefined)
+    if (this.name.value !== undefined && this.name.value.trim() !== '')
     {
       this.people = this.quizService.setParam(this.page, 'nameValid', this.name.value, this.people.name, false);
       this.name.disable();
+    } else if(this.name.value.trim() === '')
+    {
+      this.name.setValue('');
     }
   }
   

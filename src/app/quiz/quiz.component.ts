@@ -11,7 +11,7 @@ import { Router } from "@angular/router";
 })
 export class QuizComponent implements OnInit {
   
-  count: number = 120;
+  count: number = 5;
   time: string = '00:00';
   page: number = 1;
   peoples: any = [];
@@ -32,7 +32,7 @@ export class QuizComponent implements OnInit {
     });
 
     this.rForm = this.formBuilder.group({
-			name: this.formBuilder.control('', [Validators.required, Validators.minLength(5)]),
+			name: this.formBuilder.control('', [Validators.required, Validators.minLength(2)]),
 			email: this.formBuilder.control('', [Validators.required, Validators.pattern(this.emailPattern)]),
 		});
   }
@@ -96,6 +96,8 @@ export class QuizComponent implements OnInit {
   {
     this.quizService.setRanking(this.rForm.value.name, this.rForm.value.email, this.points);
     this.ngxSmartModalService.getModal('modal').close();
+    this.quizService.points = 0;
+    this.quizService.peoples = [];
     this.router.navigate(['/ranking']);
   }
 
