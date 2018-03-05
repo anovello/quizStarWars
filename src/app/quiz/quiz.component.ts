@@ -11,7 +11,7 @@ import { Router } from "@angular/router";
 })
 export class QuizComponent implements OnInit {
   
-  count: number = 5;
+  count: number = 120;
   time: string = '00:00';
   page: number = 1;
   peoples: any = [];
